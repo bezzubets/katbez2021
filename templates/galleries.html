@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+    <aside>
+        <ul>
+            <h4><b>Kate's portfolio</b></h4>
+            <hr>
+            {% for item in tg %}
+                <li><a href="/gallery/{{ item.pk }}"><b>{{ item.gallery }}</b></a></li>
+            {% endfor %}
+            <hr>
+            <li><a href="/">Back to the Main Page</a></li>
+
+        </ul>
+    </aside>
+
+{% endblock %}

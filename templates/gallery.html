@@ -1,0 +1,52 @@
+{% extends 'carousel.html' %}
+{% load static %}
+{% block content %}
+    {% for item in pics %}
+        <h1>{{ item.desription }}</h1>
+    {% endfor %}
+
+    <li><a href="/galleries">Back to the Portfolio</a></li>
+    <li><a href="/">Back to the Main Page</a></li>
+    <div id="rg-gallery" class="rg-gallery">
+        <div class="rg-thumbs">
+
+            <div class="es-carousel-wrapper">
+                <div class="es-nav">
+                    <span class="es-nav-prev">Previous</span>
+                    <span class="es-nav-next">Next</span>
+                </div>
+                <div class="es-carousel">
+                    <ul>
+                    {% for item in tgs %}
+                        {% for items in pics %}
+                            <li><a href="#"><img src={{ items.p1.url }} data-large={{items.p1.url}}/></a></li>
+                            <li><a href="#"><img src={{ items.p2.url }} data-large={{items.p2.url}}/></a></li>
+                            <li><a href="#"><img src={{ items.p3.url }} data-large={{items.p3.url}}/></a></li>
+                            <li><a href="#"><img src={{ items.p4.url }} data-large={{items.p4.url}}/></a></li>
+                            <li><a href="#"><img src={{ items.p5.url }} data-large={{items.p5.url}}/></a></li>
+                            <li><a href="#"><img src={{ items.p6.url }} data-large={{items.p6.url}}/></a></li>
+                            <li><a href="#"><img src={{ items.p7.url }} data-large={{items.p7.url}}/></a></li>
+                            <li><a href="#"><img src={{ items.p8.url }} data-large={{items.p8.url}}/></a></li>
+                            <li><a href="#"><img src={{ items.p9.url }} data-large={{items.p9.url}}/></a></li>
+                            <li><a href="#"><img src={{ items.p10.url }} data-large={{items.p10.url}}/></a></li>
+                            <li><a href="#"><img src={{ items.p11.url }} data-large={{items.p11.url}}/></a></li>
+                            <li><a href="#"><img src={{ items.p12.url }} data-large={{items.p12.url}}/></a></li>
+                        {% endfor %}
+                    {% endfor %}
+
+
+                    </ul>
+                </div>
+            </div>
+            <!-- End Elastislide Carousel Thumbnail Viewer -->
+        </div><!-- rg-thumbs -->
+    </div><!-- rg-gallery -->
+
+    </div><!-- content -->
+    </div><!-- container -->
+
+    <li><a href="/galleries">Back to the Portfolio</a></li>
+    <li><a href="/">Back to the Main Page</a></li>
+
+
+{% endblock %}

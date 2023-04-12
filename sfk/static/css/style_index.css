@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
+}
+body{
+    background-color: #aaaaaa;
+}
+aside{
+    color: black;
+    font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
+    font-size: x-large;font-style: inherit;
+    margin: 30px   ;
+}
+aside p{
+    color: black;
+    font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
+    font-size: medium;font-style: inherit;
+    margin: 5px;
+    padding-top: 5px;
+
+}
+aside p p {
+    color: black;
+    font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;;
+    font-size: large;
+    font-style: inherit;
+    padding-top: 5px;
+}
+ul li {
+    padding: 5px;
+}
+.bordered {
+
+border: 3px double #cecece;border-radius: 20px;box-shadow: -6px -6px 6px #a7a7a7;box-shadow: 0 0 8px
+rgba(0, 0, 0, 0.65);
+}
+.container{
+padding: 80px;font-family: "Bookman Old Style";
+}

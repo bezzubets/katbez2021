@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photographer Kate Bezzubets</title>
+    <link rel="stylesheet" href={%  static 'css\style_index.css' %}>
+</head>
+<body>
+<h1>Photographer Kate Bezzubets</h1>
+{% for item in titlepic %}
+<img src="{{item.titlepic.url}}" alt="Kate" align="right" class="alignleft bordered">
+{% endfor %}
+{% block content %}
+
+{% endblock %}
+<footer class="container"><b>
+    &copy; Kate Bezzubets.2021.
+</b></footer>
+</body>
+</html>
